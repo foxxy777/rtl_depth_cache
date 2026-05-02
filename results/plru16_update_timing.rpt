@@ -1,0 +1,54 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : plru16_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:40 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: access_way[3]
+              (input port clocked by clk)
+  Endpoint: new_bits[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  plru16_update      5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  access_way[3] (in)                       0.00       5.00 f
+  U54/Y (inv1a3)                           0.45       5.45 r
+  U33/Y (or2a3)                            0.38       5.84 r
+  U47/Y (inv1a3)                           0.29       6.12 f
+  U32/Y (or2a3)                            0.26       6.38 f
+  U31/Y (or2a3)                            0.28       6.67 f
+  U20/Y (or2a3)                            0.22       6.89 f
+  U55/Y (ao1f3)                            0.69       7.58 r
+  new_bits[1] (out)                        0.00       7.58 r
+  data arrival time                                   7.58
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -7.58
+  -----------------------------------------------------------
+  slack (MET)                                         7.42
+
+
+1

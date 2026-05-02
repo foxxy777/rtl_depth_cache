@@ -1,0 +1,83 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_D_16w32_d64
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:44 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: tags[32] (input port clocked by clk)
+  Endpoint: data_out[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_D_16w32_d64    5KGATES               ssc_core
+  cam_D_16w32_d64_DW01_cmp6_14
+                     5KGATES               ssc_core
+  cam_D_16w32_d64_DW01_inc_0
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 r
+  tags[32] (in)                                           0.00       5.00 r
+  eq_930/B[0] (cam_D_16w32_d64_DW01_cmp6_14)              0.00       5.00 r
+  eq_930/U15/Y (inv1a3)                                   0.10       5.10 f
+  eq_930/U4/Y (or2a2)                                     0.33       5.43 f
+  eq_930/U48/Y (oa1f1)                                    1.05       6.48 r
+  eq_930/U47/Y (or4a3)                                    0.33       6.81 r
+  eq_930/U17/Y (or4a3)                                    0.19       7.01 r
+  eq_930/U2/Y (inv1a3)                                    0.23       7.24 f
+  eq_930/EQ (cam_D_16w32_d64_DW01_cmp6_14)                0.00       7.24 f
+  U1724/Y (inv1a3)                                        0.21       7.45 r
+  add_945/A[1] (cam_D_16w32_d64_DW01_inc_0)               0.00       7.45 r
+  add_945/U1_1_1/CO (ha1a3)                               0.25       7.70 r
+  add_945/U1_1_2/CO (ha1a3)                               0.23       7.93 r
+  add_945/U1_1_3/CO (ha1a3)                               0.23       8.17 r
+  add_945/U1_1_4/CO (ha1a3)                               0.23       8.40 r
+  add_945/U1_1_5/CO (ha1a3)                               0.23       8.63 r
+  add_945/U1_1_6/CO (ha1a3)                               0.23       8.87 r
+  add_945/U1_1_7/S (ha1a3)                                0.25       9.12 f
+  add_945/SUM[7] (cam_D_16w32_d64_DW01_inc_0)             0.00       9.12 f
+  U1741/Y (and2a3)                                        0.31       9.42 f
+  U1688/Y (inv1a3)                                        0.21       9.63 r
+  U1576/Y (inv1a3)                                        0.41      10.05 f
+  U1403/Y (or2a3)                                         0.27      10.31 f
+  U1685/Y (or3a2)                                         0.51      10.82 f
+  U1687/Y (or3a2)                                         0.40      11.22 f
+  U1686/Y (inv1a3)                                        0.20      11.42 r
+  U1695/Y (and2a3)                                        1.03      12.45 r
+  U1595/Y (buf1a3)                                        0.62      13.07 r
+  U2786/Y (oa1f3)                                         0.28      13.35 f
+  U2018/Y (and2a3)                                        0.22      13.57 f
+  U2017/Y (oa1f3)                                         0.27      13.84 r
+  U2016/Y (oa1f3)                                         0.20      14.04 f
+  U1778/Y (and4a3)                                        0.19      14.24 f
+  U1776/Y (ao1f3)                                         0.69      14.93 r
+  data_out[4] (out)                                       0.00      14.93 r
+  data arrival time                                                 14.93
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                -14.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1

@@ -1,0 +1,52 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : agemtx16_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:19:37 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: access_way[2]
+              (input port clocked by clk)
+  Endpoint: new_9_4 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  agemtx16_update    5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  access_way[2] (in)                       0.00       5.00 f
+  U331/Y (inv1a3)                          0.18       5.18 r
+  U330/Y (or3a2)                           0.50       5.68 r
+  U241/Y (or2a3)                           0.29       5.97 r
+  U329/Y (or2a6)                           0.51       6.48 r
+  U311/Y (inv1a3)                          0.89       7.37 f
+  U358/Y (ao1f3)                           0.77       8.15 r
+  new_9_4 (out)                            0.00       8.15 r
+  data arrival time                                   8.15
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -8.15
+  -----------------------------------------------------------
+  slack (MET)                                         6.85
+
+
+1

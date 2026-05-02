@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : repl_first_invalid_8
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:24:04 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: valid_bits[4]
+              (input port clocked by clk)
+  Endpoint: way[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  repl_first_invalid_8
+                     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  valid_bits[4] (in)                       0.00       5.00 r
+  U33/Y (inv1a3)                           0.11       5.11 f
+  U32/Y (or3a2)                            0.39       5.49 f
+  U31/Y (and3a3)                           0.20       5.69 f
+  U29/Y (ao1f3)                            0.69       6.38 r
+  way[1] (out)                             0.00       6.38 r
+  data arrival time                                   6.38
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.38
+  -----------------------------------------------------------
+  slack (MET)                                         8.62
+
+
+1

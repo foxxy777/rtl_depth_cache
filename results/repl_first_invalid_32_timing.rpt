@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : repl_first_invalid_32
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:24:06 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: valid_bits[3]
+              (input port clocked by clk)
+  Endpoint: way[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  repl_first_invalid_32
+                     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  valid_bits[3] (in)                       0.00       5.00 r
+  U127/Y (and2a3)                          0.28       5.28 r
+  U106/Y (and3a3)                          0.37       5.65 r
+  U133/Y (and3a3)                          0.32       5.97 r
+  U121/Y (and2a3)                          0.38       6.36 r
+  U130/Y (and3a3)                          0.38       6.74 r
+  U129/Y (and3a3)                          0.37       7.10 r
+  U131/Y (and3a3)                          0.37       7.47 r
+  U126/Y (and3a3)                          0.37       7.84 r
+  U122/Y (and3a3)                          0.37       8.21 r
+  U128/Y (and3a3)                          0.37       8.58 r
+  U124/Y (and3a3)                          0.37       8.95 r
+  U125/Y (and3a3)                          0.37       9.32 r
+  U141/Y (and3a3)                          0.32       9.64 r
+  U132/Y (and2a3)                          0.33       9.97 r
+  U123/Y (and3a3)                          0.37      10.34 r
+  U137/Y (inv1a3)                          0.18      10.52 f
+  U136/Y (or3a2)                           0.45      10.97 f
+  U135/Y (ao1f3)                           0.17      11.13 r
+  U134/Y (or3a2)                           0.42      11.55 r
+  U140/Y (inv1a3)                          0.21      11.76 f
+  U139/Y (ao1f3)                           0.16      11.92 r
+  U138/Y (or4a3)                           0.27      12.18 r
+  U117/Y (or3a2)                           0.71      12.89 r
+  way[4] (out)                             0.00      12.90 r
+  data arrival time                                  12.90
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -12.90
+  -----------------------------------------------------------
+  slack (MET)                                         2.10
+
+
+1

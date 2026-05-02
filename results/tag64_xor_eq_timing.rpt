@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tag64_xor_eq
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:23:33 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[20]
+              (input port clocked by clk)
+  Endpoint: hit (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tag64_xor_eq       5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  req_tag[20] (in)                         0.00       5.00 f
+  U84/Y (xor2a6)                           0.23       5.23 f
+  U105/Y (or4a3)                           0.26       5.49 f
+  U90/Y (or4a3)                            0.27       5.76 f
+  U88/Y (or4a3)                            0.27       6.03 f
+  U87/Y (inv1a3)                           0.36       6.39 r
+  hit (out)                                0.00       6.40 r
+  data arrival time                                   6.40
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.40
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+1

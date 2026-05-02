@@ -1,0 +1,60 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_C2_4w32
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:29 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: tags[32] (input port clocked by clk)
+  Endpoint: valid (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_C2_4w32        5KGATES               ssc_core
+  cam_C2_4w32_DW01_cmp6_2
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 r
+  tags[32] (in)                                           0.00       5.00 r
+  eq_618/B[0] (cam_C2_4w32_DW01_cmp6_2)                   0.00       5.00 r
+  eq_618/U3/Y (inv1a3)                                    0.10       5.10 f
+  eq_618/U47/Y (or2a1)                                    0.53       5.63 f
+  eq_618/U46/Y (and2a3)                                   0.24       5.86 f
+  eq_618/U45/Y (oa1f1)                                    0.88       6.74 r
+  eq_618/U44/Y (or4a3)                                    0.33       7.07 r
+  eq_618/U6/Y (or4a3)                                     0.19       7.27 r
+  eq_618/U1/Y (inv1a3)                                    0.15       7.42 f
+  eq_618/EQ (cam_C2_4w32_DW01_cmp6_2)                     0.00       7.42 f
+  U27/Y (inv1a3)                                          0.18       7.60 r
+  U23/Y (and2a3)                                          0.29       7.89 r
+  U21/Y (inv1a3)                                          0.17       8.06 f
+  U14/Y (or2a3)                                           0.36       8.42 f
+  valid (out)                                             0.00       8.42 f
+  data arrival time                                                  8.42
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                 -8.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.58
+
+
+1

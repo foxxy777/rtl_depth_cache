@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : parity8
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:17 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                            9
+Number of nets:                            15
+Number of cells:                            7
+Number of combinational cells:              7
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:                303.380001
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             954.465008
+
+Total cell area:                   303.380001
+Total area:                       1257.845009
+1

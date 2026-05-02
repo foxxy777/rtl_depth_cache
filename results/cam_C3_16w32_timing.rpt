@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_C3_16w32
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:37 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: tags[256] (input port clocked by clk)
+  Endpoint: way_enc[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_C3_16w32       5KGATES               ssc_core
+  cam_C3_16w32_DW01_cmp6_7
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 r
+  tags[256] (in)                                          0.00       5.00 r
+  eq_791/B[0] (cam_C3_16w32_DW01_cmp6_7)                  0.00       5.00 r
+  eq_791/U3/Y (inv1a3)                                    0.10       5.10 f
+  eq_791/U47/Y (or2a1)                                    0.53       5.63 f
+  eq_791/U46/Y (and2a3)                                   0.24       5.86 f
+  eq_791/U45/Y (oa1f1)                                    0.88       6.74 r
+  eq_791/U44/Y (or4a3)                                    0.33       7.07 r
+  eq_791/U6/Y (or4a3)                                     0.19       7.27 r
+  eq_791/U1/Y (inv1a3)                                    0.18       7.45 f
+  eq_791/EQ (cam_C3_16w32_DW01_cmp6_7)                    0.00       7.45 f
+  U96/Y (or3a2)                                           0.43       7.88 f
+  U79/Y (or3a2)                                           0.45       8.33 f
+  U81/Y (inv1a3)                                          0.16       8.50 r
+  U80/Y (or3a2)                                           0.36       8.86 r
+  U68/Y (inv1a3)                                          0.63       9.49 f
+  U77/Y (ao1f3)                                           0.37       9.85 r
+  U76/Y (ao1f3)                                           0.26      10.12 f
+  U75/Y (inv1a3)                                          0.59      10.71 r
+  U74/Y (and2a3)                                          0.39      11.10 r
+  U84/Y (and2a3)                                          0.24      11.35 r
+  U82/Y (or3a2)                                           0.39      11.73 r
+  U45/Y (or2a3)                                           0.22      11.96 r
+  U69/Y (and3a3)                                          0.50      12.46 r
+  U71/Y (oa1f3)                                           0.30      12.76 f
+  U70/Y (and2a3)                                          0.37      13.13 f
+  way_enc[0] (out)                                        0.00      13.14 f
+  data arrival time                                                 13.14
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                -13.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.86
+
+
+1

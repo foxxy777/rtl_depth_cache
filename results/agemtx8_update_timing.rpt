@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : agemtx8_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:04 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: access_way[2]
+              (input port clocked by clk)
+  Endpoint: new_7_4 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  agemtx8_update     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  access_way[2] (in)                       0.00       5.00 f
+  U95/Y (inv1a3)                           0.11       5.11 r
+  U60/Y (or2a3)                            0.31       5.42 r
+  U98/Y (or3a2)                            0.86       6.29 r
+  U89/Y (inv1a3)                           0.77       7.06 f
+  U102/Y (ao1f3)                           0.75       7.81 r
+  new_7_4 (out)                            0.00       7.81 r
+  data arrival time                                   7.81
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -7.81
+  -----------------------------------------------------------
+  slack (MET)                                         7.19
+
+
+1

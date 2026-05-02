@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : hamming8_encode
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:20 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                           13
+Number of nets:                            22
+Number of cells:                           14
+Number of combinational cells:             14
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:                606.760002
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1679.859547
+
+Total cell area:                   606.760002
+Total area:                       2286.619549
+1

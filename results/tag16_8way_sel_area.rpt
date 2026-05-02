@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : tag16_8way_sel
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:17:23 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                          433
+Number of nets:                           999
+Number of cells:                          599
+Number of combinational cells:            599
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         99
+Number of references:                      12
+
+Combinational area:              17358.509932
+Buf/Inv area:                     1251.690010
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           74435.579727
+
+Total cell area:                 17358.509932
+Total area:                      91794.089659
+1

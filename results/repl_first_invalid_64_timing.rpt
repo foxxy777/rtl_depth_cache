@@ -1,0 +1,86 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : repl_first_invalid_64
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:24:07 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: valid_bits[3]
+              (input port clocked by clk)
+  Endpoint: way[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  repl_first_invalid_64
+                     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  valid_bits[3] (in)                       0.00       5.00 r
+  U237/Y (and2a3)                          0.27       5.27 r
+  U228/Y (and3a3)                          0.32       5.59 r
+  U231/Y (and2a3)                          0.34       5.93 r
+  U244/Y (and2a15)                         0.24       6.17 r
+  U259/Y (and3a15)                         0.22       6.39 r
+  U212/Y (and3a9)                          0.27       6.66 r
+  U211/Y (and3a9)                          0.28       6.94 r
+  U213/Y (and3a6)                          0.28       7.22 r
+  U260/Y (and3a15)                         0.25       7.47 r
+  U215/Y (and3a15)                         0.22       7.70 r
+  U219/Y (and3a15)                         0.23       7.93 r
+  U218/Y (and3a15)                         0.23       8.15 r
+  U257/Y (and3a15)                         0.22       8.38 r
+  U307/Y (and3a3)                          0.31       8.69 r
+  U232/Y (and3a3)                          0.35       9.04 r
+  U229/Y (and2a3)                          0.34       9.38 r
+  U261/Y (and3a15)                         0.28       9.67 r
+  U217/Y (and3a15)                         0.23       9.89 r
+  U221/Y (and3a15)                         0.22      10.12 r
+  U220/Y (and3a15)                         0.23      10.35 r
+  U258/Y (and3a15)                         0.22      10.57 r
+  U309/Y (and3a3)                          0.31      10.88 r
+  U230/Y (and3a3)                          0.35      11.23 r
+  U227/Y (and2a3)                          0.34      11.58 r
+  U240/Y (and3a15)                         0.28      11.86 r
+  U223/Y (and3a15)                         0.23      12.09 r
+  U222/Y (and3a15)                         0.23      12.32 r
+  U247/Y (and2a15)                         0.18      12.50 r
+  U241/Y (and3a15)                         0.21      12.70 r
+  U282/Y (and2a3)                          0.29      12.99 r
+  U226/Y (and2a3)                          0.26      13.25 r
+  U308/Y (inv1a3)                          0.15      13.40 f
+  U225/Y (or4a6)                           0.29      13.69 f
+  U224/Y (ao1f6)                           0.10      13.79 r
+  U310/Y (or3a2)                           0.31      14.10 r
+  U256/Y (or4a6)                           0.23      14.33 r
+  U235/Y (ao1a6)                           0.17      14.49 r
+  U233/Y (or4a3)                           0.19      14.68 r
+  U291/Y (or3a6)                           0.29      14.98 r
+  way[1] (out)                             0.00      14.98 r
+  data arrival time                                  14.98
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -14.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

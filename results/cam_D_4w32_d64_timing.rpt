@@ -1,0 +1,65 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_D_4w32_d64
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:40 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: tags[0] (input port clocked by clk)
+  Endpoint: data_out[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_D_4w32_d64     5KGATES               ssc_core
+  cam_D_4w32_d64_DW01_cmp6_3
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 r
+  tags[0] (in)                                            0.00       5.00 r
+  eq_858/B[0] (cam_D_4w32_d64_DW01_cmp6_3)                0.00       5.00 r
+  eq_858/U3/Y (inv1a3)                                    0.10       5.10 f
+  eq_858/U47/Y (or2a1)                                    0.53       5.63 f
+  eq_858/U46/Y (and2a3)                                   0.24       5.86 f
+  eq_858/U45/Y (oa1f1)                                    0.88       6.74 r
+  eq_858/U44/Y (or4a3)                                    0.33       7.07 r
+  eq_858/U6/Y (or4a3)                                     0.19       7.27 r
+  eq_858/U1/Y (inv1a3)                                    0.20       7.46 f
+  eq_858/EQ (cam_D_4w32_d64_DW01_cmp6_3)                  0.00       7.46 f
+  U448/Y (inv1a3)                                         0.24       7.70 r
+  U446/Y (and4a3)                                         0.62       8.32 r
+  U416/Y (buf1a3)                                         0.42       8.74 r
+  U404/Y (buf1a3)                                         0.37       9.11 r
+  U478/Y (and2a3)                                         0.27       9.38 r
+  U457/Y (oa1f3)                                          0.15       9.53 f
+  U455/Y (and2a3)                                         0.23       9.75 f
+  U454/Y (inv1a3)                                         0.35      10.10 r
+  data_out[0] (out)                                       0.00      10.10 r
+  data arrival time                                                 10.10
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                -10.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+1

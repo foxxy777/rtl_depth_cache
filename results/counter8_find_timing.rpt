@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter8_find
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:34 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: cnt1[1] (input port clocked by clk)
+  Endpoint: min_way[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  counter8_find      5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  cnt1[1] (in)                             0.00       5.00 r
+  U412/Y (and2a3)                          0.47       5.47 r
+  U403/Y (inv1a3)                          0.49       5.96 f
+  U435/Y (ao1f3)                           0.30       6.26 r
+  U434/Y (and2a3)                          0.26       6.52 r
+  U433/Y (ao1f3)                           0.20       6.72 f
+  U428/Y (ao1f3)                           0.23       6.94 r
+  U427/Y (inv1a3)                          0.22       7.17 f
+  U426/Y (oa1f3)                           0.27       7.44 r
+  U425/Y (oa1f3)                           0.19       7.63 f
+  U436/Y (or4a3)                           0.28       7.91 f
+  U430/Y (or4a3)                           0.26       8.17 f
+  U429/Y (inv1a3)                          0.25       8.41 r
+  U413/Y (or4a3)                           0.43       8.85 r
+  min_way[0] (out)                         0.00       8.85 r
+  data arrival time                                   8.85
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -8.85
+  -----------------------------------------------------------
+  slack (MET)                                         6.15
+
+
+1

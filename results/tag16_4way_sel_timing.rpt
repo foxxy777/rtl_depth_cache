@@ -1,0 +1,60 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tag16_4way_sel
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:17:21 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[0] (input port clocked by clk)
+  Endpoint: selected_data[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tag16_4way_sel     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  req_tag[0] (in)                          0.00       5.00 r
+  U379/Y (inv1a3)                          0.26       5.26 f
+  U456/Y (or2a1)                           0.56       5.82 f
+  U457/Y (and2a3)                          0.24       6.05 f
+  U458/Y (oa1f1)                           0.88       6.93 r
+  U459/Y (or4a3)                           0.33       7.26 r
+  U465/Y (or4a3)                           0.28       7.54 r
+  U235/Y (inv1a3)                          0.19       7.73 f
+  U174/Y (or2a3)                           0.25       7.97 f
+  U220/Y (inv1a3)                          0.19       8.16 r
+  U233/Y (and2a3)                          1.02       9.18 r
+  U223/Y (buf1a3)                          0.94      10.13 r
+  U349/Y (oa1f3)                           0.36      10.49 f
+  U348/Y (and2a3)                          0.23      10.72 f
+  U347/Y (inv1a3)                          0.35      11.07 r
+  selected_data[31] (out)                  0.00      11.07 r
+  data arrival time                                  11.07
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -11.07
+  -----------------------------------------------------------
+  slack (MET)                                         3.93
+
+
+1

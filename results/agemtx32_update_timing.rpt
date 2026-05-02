@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : agemtx32_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:19:52 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: access_way[0]
+              (input port clocked by clk)
+  Endpoint: new_9_31 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  agemtx32_update    5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  access_way[0] (in)                       0.00       5.00 f
+  U1325/Y (inv1a3)                         0.79       5.79 r
+  U1249/Y (or3a2)                          1.24       7.02 r
+  U1212/Y (buf1a3)                         0.52       7.54 r
+  U1147/Y (inv1a3)                         0.75       8.29 f
+  U1314/Y (ao1f3)                          0.76       9.05 r
+  new_9_31 (out)                           0.00       9.06 r
+  data arrival time                                   9.06
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.06
+  -----------------------------------------------------------
+  slack (MET)                                         5.94
+
+
+1

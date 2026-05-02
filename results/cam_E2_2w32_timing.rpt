@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_E2_2w32
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:45 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[10]
+              (input port clocked by clk)
+  Endpoint: hit[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_E2_2w32        5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  req_tag[10] (in)                         0.00       5.00 f
+  U129/Y (inv1a3)                          0.25       5.25 r
+  U74/Y (xor2a6)                           0.26       5.51 r
+  U127/Y (and4a3)                          0.33       5.84 r
+  U121/Y (and4a3)                          0.35       6.19 r
+  U119/Y (and2a3)                          0.47       6.66 r
+  hit[0] (out)                             0.00       6.66 r
+  data arrival time                                   6.66
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.66
+  -----------------------------------------------------------
+  slack (MET)                                         8.34
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : tag48_mask_eq
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:17:53 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                          248
+Number of nets:                           414
+Number of cells:                          174
+Number of combinational cells:            172
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          5
+Number of references:                       2
+
+Combinational area:               5038.379984
+Buf/Inv area:                       54.200001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           21481.831337
+
+Total cell area:                  5038.379984
+Total area:                      26520.211321
+1

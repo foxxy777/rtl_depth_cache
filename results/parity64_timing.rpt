@@ -1,0 +1,72 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : parity64
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:19 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: d[56] (input port clocked by clk)
+  Endpoint: p (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  parity64           5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  d[56] (in)                               0.00       5.00 f
+  U27/Y (xor2a6)                           0.23       5.23 f
+  U26/Y (xor2a6)                           0.26       5.49 f
+  U25/Y (xor2a6)                           0.26       5.75 f
+  U24/Y (xor2a6)                           0.26       6.01 f
+  U23/Y (xor2a6)                           0.26       6.26 f
+  U22/Y (xor2a6)                           0.26       6.52 f
+  U21/Y (xor2a6)                           0.26       6.78 f
+  U20/Y (xor2a6)                           0.26       7.03 f
+  U19/Y (xor2a6)                           0.26       7.29 f
+  U18/Y (xor2a6)                           0.26       7.55 f
+  U17/Y (xor2a6)                           0.26       7.81 f
+  U16/Y (xor2a6)                           0.26       8.06 f
+  U15/Y (xor2a6)                           0.26       8.32 f
+  U14/Y (xor2a6)                           0.26       8.58 f
+  U13/Y (xor2a6)                           0.26       8.84 f
+  U12/Y (xor2a6)                           0.26       9.09 f
+  U11/Y (xor2a6)                           0.26       9.35 f
+  U10/Y (xor2a6)                           0.26       9.61 f
+  U9/Y (xor2a6)                            0.26       9.87 f
+  U8/Y (xor2a6)                            0.26      10.12 f
+  U7/Y (xor2a6)                            0.26      10.38 f
+  U6/Y (xor2a6)                            0.26      10.64 f
+  U5/Y (xor2a6)                            0.26      10.89 f
+  U4/Y (xor2a6)                            0.26      11.15 f
+  U3/Y (xor2a6)                            0.26      11.41 f
+  U2/Y (xor2a6)                            0.26      11.67 f
+  U1/Y (xor2a6)                            0.39      12.06 r
+  p (out)                                  0.00      12.06 r
+  data arrival time                                  12.06
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -12.06
+  -----------------------------------------------------------
+  slack (MET)                                         2.94
+
+
+1

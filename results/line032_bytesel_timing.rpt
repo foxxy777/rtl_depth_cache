@@ -1,0 +1,53 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : line032_bytesel
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:16:58 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: byte_off[1]
+              (input port clocked by clk)
+  Endpoint: byte_data[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  line032_bytesel    5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  byte_off[1] (in)                         0.00       5.00 f
+  U97/Y (inv1a3)                           0.15       5.15 r
+  U56/Y (and2a3)                           0.53       5.68 r
+  U89/Y (and2a3)                           0.29       5.96 r
+  U60/Y (oa1f3)                            0.15       6.11 f
+  U58/Y (and2a3)                           0.24       6.35 f
+  U57/Y (inv1a3)                           0.35       6.70 r
+  byte_data[0] (out)                       0.00       6.70 r
+  data arrival time                                   6.70
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.70
+  -----------------------------------------------------------
+  slack (MET)                                         8.30
+
+
+1

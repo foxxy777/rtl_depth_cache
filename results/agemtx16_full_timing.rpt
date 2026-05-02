@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : agemtx16_full
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:19:35 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: access_way[3]
+              (input port clocked by clk)
+  Endpoint: lru_way[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  agemtx16_full      5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  access_way[3] (in)                       0.00       5.00 f
+  U445/Y (inv1a3)                          0.11       5.11 r
+  U326/Y (or2a3)                           0.36       5.47 r
+  U467/Y (or3a2)                           0.41       5.88 r
+  U466/Y (or2a6)                           0.55       6.43 r
+  U468/Y (and2a3)                          0.29       6.72 r
+  U460/Y (oa1f3)                           0.15       6.88 f
+  U457/Y (and4a3)                          0.21       7.08 f
+  U446/Y (and4a3)                          0.21       7.30 f
+  U194/Y (ao1a3)                           0.28       7.58 f
+  U396/Y (or3a2)                           0.45       8.03 f
+  U394/Y (or3a2)                           0.46       8.49 f
+  U191/Y (or2a3)                           0.26       8.74 f
+  U393/Y (or3a2)                           0.52       9.26 f
+  U112/Y (or2a3)                           0.30       9.55 f
+  U395/Y (or3a2)                           0.46      10.01 f
+  U73/Y (or2a3)                            0.26      10.27 f
+  U452/Y (oa1f3)                           0.23      10.50 r
+  U453/Y (and4a3)                          0.36      10.86 r
+  U463/Y (and4a3)                          0.35      11.21 r
+  U462/Y (inv1a3)                          0.24      11.45 f
+  U399/Y (ao1f3)                           0.16      11.60 r
+  U398/Y (or3a2)                           0.33      11.93 r
+  U397/Y (inv1a3)                          0.23      12.16 f
+  U403/Y (ao1f3)                           0.16      12.32 r
+  U401/Y (or3a2)                           0.73      13.05 r
+  lru_way[2] (out)                         0.00      13.05 r
+  data arrival time                                  13.05
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -13.05
+  -----------------------------------------------------------
+  slack (MET)                                         1.95
+
+
+1

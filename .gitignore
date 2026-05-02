@@ -1,0 +1,11 @@
+command.log
+default.svf
+*.log
+dc.log
+*.svf
+alib-*
+work/
+DPLYMNT_PTS/
+*.sve
+*.old
+synopsys_*

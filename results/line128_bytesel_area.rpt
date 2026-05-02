@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : line128_bytesel
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:16:59 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                          140
+Number of nets:                           308
+Number of cells:                          176
+Number of combinational cells:            176
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          4
+Number of references:                       6
+
+Combinational area:               4637.639992
+Buf/Inv area:                       43.360001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           23467.123566
+
+Total cell area:                  4637.639992
+Total area:                      28104.763557
+1

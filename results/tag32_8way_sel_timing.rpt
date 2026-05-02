@@ -1,0 +1,66 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tag32_8way_sel
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:17:44 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[0] (input port clocked by clk)
+  Endpoint: selected_data[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tag32_8way_sel     5KGATES               ssc_core
+  tag32_8way_sel_DW01_cmp6_7
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 r
+  req_tag[0] (in)                                         0.00       5.00 r
+  eq_398/B[0] (tag32_8way_sel_DW01_cmp6_7)                0.00       5.00 r
+  eq_398/U3/Y (inv1a3)                                    0.10       5.10 f
+  eq_398/U47/Y (or2a1)                                    0.53       5.63 f
+  eq_398/U46/Y (and2a3)                                   0.24       5.86 f
+  eq_398/U45/Y (oa1f1)                                    0.88       6.74 r
+  eq_398/U44/Y (or4a3)                                    0.33       7.07 r
+  eq_398/U6/Y (or4a3)                                     0.19       7.27 r
+  eq_398/U1/Y (inv1a3)                                    0.20       7.46 f
+  eq_398/EQ (tag32_8way_sel_DW01_cmp6_7)                  0.00       7.46 f
+  U316/Y (or2a3)                                          0.25       7.71 f
+  U396/Y (or3a2)                                          0.45       8.16 f
+  U395/Y (or3a2)                                          0.45       8.61 f
+  U366/Y (inv1a3)                                         0.21       8.82 r
+  U397/Y (and3a3)                                         1.04       9.86 r
+  U367/Y (buf1a3)                                         0.94      10.81 r
+  U408/Y (oa1f3)                                          0.38      11.18 f
+  U465/Y (and4a3)                                         0.21      11.40 f
+  U464/Y (inv1a3)                                         0.35      11.75 r
+  selected_data[1] (out)                                  0.00      11.75 r
+  data arrival time                                                 11.75
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                -11.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.25
+
+
+1

@@ -1,0 +1,52 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : qread_2_oh
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:21:30 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: ptr[2] (input port clocked by clk)
+  Endpoint: data_out0[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qread_2_oh         5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  ptr[2] (in)                              0.00       5.00 f
+  U1372/Y (inv1a3)                         0.24       5.24 r
+  U1379/Y (and3a3)                         1.07       6.31 r
+  U724/Y (buf1a3)                          0.67       6.98 r
+  U966/Y (oa1f3)                           0.30       7.28 f
+  U965/Y (and4a3)                          0.21       7.49 f
+  U964/Y (inv1a3)                          0.35       7.84 r
+  data_out0[0] (out)                       0.00       7.84 r
+  data arrival time                                   7.84
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -7.84
+  -----------------------------------------------------------
+  slack (MET)                                         7.16
+
+
+1

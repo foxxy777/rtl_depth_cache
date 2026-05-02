@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : repl_first_invalid_32
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:24:06 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                           38
+Number of nets:                           134
+Number of cells:                          102
+Number of combinational cells:            102
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         34
+Number of references:                       9
+
+Combinational area:               2503.279943
+Buf/Inv area:                      368.560005
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           11122.709286
+
+Total cell area:                  2503.279943
+Total area:                      13625.989229
+1

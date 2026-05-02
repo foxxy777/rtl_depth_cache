@@ -1,0 +1,49 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hamming8_encode
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:20 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: d[5] (input port clocked by clk)
+  Endpoint: op (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hamming8_encode    5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  d[5] (in)                                0.00       5.00 f
+  U5/Y (xor2a6)                            0.23       5.23 f
+  U4/Y (xor2a6)                            0.31       5.54 r
+  U2/Y (xor2a6)                            0.24       5.78 f
+  U1/Y (xor2a6)                            0.39       6.17 r
+  op (out)                                 0.00       6.17 r
+  data arrival time                                   6.17
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.17
+  -----------------------------------------------------------
+  slack (MET)                                         8.83
+
+
+1

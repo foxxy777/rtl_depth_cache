@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : counter4_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:32 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                           28
+Number of nets:                            37
+Number of cells:                           22
+Number of combinational cells:             22
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          6
+Number of references:                       4
+
+Combinational area:                498.479996
+Buf/Inv area:                       65.040001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2787.039551
+
+Total cell area:                   498.479996
+Total area:                       3285.519547
+1

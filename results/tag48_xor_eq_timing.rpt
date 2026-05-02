@@ -1,0 +1,52 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tag48_xor_eq
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:23:32 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[34]
+              (input port clocked by clk)
+  Endpoint: hit (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tag48_xor_eq       5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  req_tag[34] (in)                         0.00       5.00 f
+  U29/Y (xor2a6)                           0.23       5.23 f
+  U80/Y (or3a2)                            0.39       5.62 f
+  U75/Y (or4a3)                            0.26       5.89 f
+  U73/Y (or4a3)                            0.27       6.15 f
+  U70/Y (or4a3)                            0.26       6.42 f
+  U69/Y (inv1a3)                           0.36       6.78 r
+  hit (out)                                0.00       6.78 r
+  data arrival time                                   6.78
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.78
+  -----------------------------------------------------------
+  slack (MET)                                         8.22
+
+
+1

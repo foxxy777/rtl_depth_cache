@@ -1,0 +1,97 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_C1_32w32
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:23:47 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[20]
+              (input port clocked by clk)
+  Endpoint: way_enc[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_C1_32w32       5KGATES               ssc_core
+  cam_C1_32w32_DW01_cmp6_31
+                     5KGATES               ssc_core
+  cam_C1_32w32_DW01_inc_0
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 f
+  req_tag[20] (in)                                        0.00       5.00 f
+  eq_8/A[20] (cam_C1_32w32_DW01_cmp6_31)                  0.00       5.00 f
+  eq_8/U41/Y (xor2a1)                                     0.61       5.61 r
+  eq_8/U1/Y (or4a3)                                       0.24       5.85 r
+  eq_8/U25/Y (or4a6)                                      0.19       6.04 r
+  eq_8/U28/Y (or3a6)                                      0.18       6.22 r
+  eq_8/U26/Y (inv1a6)                                     0.11       6.33 f
+  eq_8/EQ (cam_C1_32w32_DW01_cmp6_31)                     0.00       6.33 f
+  U191/Y (pclk1b6)                                        0.09       6.42 r
+  add_40/A[0] (cam_C1_32w32_DW01_inc_0)                   0.00       6.42 r
+  add_40/U1_1_1/CO (ha1a3)                                0.22       6.64 r
+  add_40/U1_1_2/CO (ha1a3)                                0.23       6.87 r
+  add_40/U1_1_3/CO (ha1a3)                                0.23       7.10 r
+  add_40/U1_1_4/CO (ha1a3)                                0.23       7.33 r
+  add_40/U1_1_5/CO (ha1a3)                                0.23       7.57 r
+  add_40/U1_1_6/CO (ha1a3)                                0.23       7.80 r
+  add_40/U1_1_7/CO (ha1a3)                                0.23       8.03 r
+  add_40/U1_1_8/CO (ha1a3)                                0.23       8.26 r
+  add_40/U1_1_9/CO (ha1a3)                                0.23       8.50 r
+  add_40/U1_1_10/CO (ha1a3)                               0.23       8.73 r
+  add_40/U1_1_11/CO (ha1a3)                               0.23       8.96 r
+  add_40/U1_1_12/CO (ha1a3)                               0.23       9.19 r
+  add_40/U1_1_13/CO (ha1a3)                               0.23       9.43 r
+  add_40/U1_1_14/CO (ha1a3)                               0.23       9.66 r
+  add_40/U1_1_15/CO (ha1a3)                               0.23       9.89 r
+  add_40/U1_1_16/CO (ha1a3)                               0.23      10.13 r
+  add_40/U1_1_17/CO (ha1a3)                               0.23      10.36 r
+  add_40/U1_1_18/CO (ha1a3)                               0.23      10.59 r
+  add_40/U1_1_19/CO (ha1a3)                               0.23      10.82 r
+  add_40/U1_1_20/CO (ha1a3)                               0.23      11.06 r
+  add_40/U1_1_21/CO (ha1a3)                               0.23      11.29 r
+  add_40/U1_1_22/CO (ha1a3)                               0.23      11.52 r
+  add_40/U1_1_23/CO (ha1a3)                               0.23      11.76 r
+  add_40/U1_1_24/CO (ha1a3)                               0.23      11.99 r
+  add_40/U1_1_25/CO (ha1a3)                               0.23      12.22 r
+  add_40/U1_1_26/CO (ha1a3)                               0.23      12.45 r
+  add_40/U1_1_27/CO (ha1a3)                               0.23      12.69 r
+  add_40/U1_1_28/CO (ha1a3)                               0.23      12.92 r
+  add_40/U1_1_29/CO (ha1a3)                               0.23      13.15 r
+  add_40/U1_1_30/CO (ha1a3)                               0.26      13.41 r
+  add_40/U1/Y (xor2a6)                                    0.19      13.60 f
+  add_40/SUM[31] (cam_C1_32w32_DW01_inc_0)                0.00      13.60 f
+  U226/Y (and2a6)                                         0.18      13.78 f
+  U181/Y (or3a6)                                          0.32      14.10 f
+  U189/Y (oa1f6)                                          0.16      14.27 r
+  U188/Y (and2a15)                                        0.20      14.47 r
+  U186/Y (ao1f6)                                          0.11      14.58 f
+  U185/Y (or3a6)                                          0.42      15.00 f
+  way_enc[3] (out)                                        0.00      15.00 f
+  data arrival time                                                 15.00
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                -15.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

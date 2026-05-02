@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hamming64_encode
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:25 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: d[48] (input port clocked by clk)
+  Endpoint: ck[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hamming64_encode   5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  d[48] (in)                               0.00       5.00 f
+  U123/Y (xor2a6)                          0.30       5.30 r
+  U122/Y (xor2a6)                          0.25       5.55 f
+  U121/Y (xor2a6)                          0.28       5.83 f
+  U120/Y (xor2a6)                          0.27       6.10 f
+  U119/Y (xor2a6)                          0.31       6.40 r
+  U72/Y (xor2a6)                           0.24       6.64 f
+  U71/Y (xor2a6)                           0.26       6.91 f
+  U70/Y (xor2a6)                           0.26       7.16 f
+  U69/Y (xor2a6)                           0.26       7.42 f
+  U68/Y (xor2a6)                           0.26       7.68 f
+  U67/Y (xor2a6)                           0.26       7.94 f
+  U66/Y (xor2a6)                           0.39       8.33 r
+  ck[2] (out)                              0.00       8.33 r
+  data arrival time                                   8.33
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -8.33
+  -----------------------------------------------------------
+  slack (MET)                                         6.67
+
+
+1

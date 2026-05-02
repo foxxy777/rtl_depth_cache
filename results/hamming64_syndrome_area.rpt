@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : hamming64_syndrome
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:26 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                           80
+Number of nets:                           215
+Number of cells:                          143
+Number of combinational cells:            143
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          8
+Number of references:                       2
+
+Combinational area:               5937.620022
+Buf/Inv area:                       86.720001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           15487.792839
+
+Total cell area:                  5937.620022
+Total area:                      21425.412861
+1

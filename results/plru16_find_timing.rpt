@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : plru16_find
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:38 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: bits[11] (input port clocked by clk)
+  Endpoint: replace_way[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  plru16_find        5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  bits[11] (in)                            0.00       5.00 f
+  U38/Y (inv1a3)                           0.15       5.15 r
+  U37/Y (and2a3)                           0.24       5.39 r
+  U35/Y (ao1f3)                            0.19       5.58 f
+  U33/Y (oa1f3)                            0.28       5.86 r
+  U12/Y (ao1a3)                            0.42       6.28 r
+  replace_way[0] (out)                     0.00       6.28 r
+  data arrival time                                   6.28
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.28
+  -----------------------------------------------------------
+  slack (MET)                                         8.72
+
+
+1

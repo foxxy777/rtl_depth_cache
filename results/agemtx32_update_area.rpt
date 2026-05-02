@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : agemtx32_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:19:52 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                         1990
+Number of nets:                          2213
+Number of cells:                         1216
+Number of combinational cells:           1216
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        166
+Number of references:                       7
+
+Combinational area:              41061.580311
+Buf/Inv area:                     2167.320015
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:          192814.796001
+
+Total cell area:                 41061.580311
+Total area:                     233876.376312
+1

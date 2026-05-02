@@ -1,0 +1,74 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter32_find
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:26 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: cnt24[0] (input port clocked by clk)
+  Endpoint: min_way[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  counter32_find     10KGATES              ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  cnt24[0] (in)                            0.00       5.00 r
+  U1917/Y (inv1a9)                         0.29       5.29 f
+  U10475/Y (or2a1)                         0.56       5.86 f
+  U10476/Y (ao1f1)                         1.11       6.97 r
+  U5151/Y (inv1a3)                         0.38       7.35 f
+  U10477/Y (oa1f1)                         0.87       8.22 r
+  U10478/Y (oa1f1)                         0.85       9.07 f
+  U10479/Y (and2a3)                        0.27       9.34 f
+  U10480/Y (or3a1)                         0.61       9.95 f
+  U10481/Y (ao1f1)                         0.58      10.53 r
+  U1821/Y (and4a3)                         0.53      11.06 r
+  U1608/Y (and4a6)                         0.39      11.45 r
+  U1952/Y (or2a6)                          0.20      11.65 r
+  U1969/Y (or2a15)                         0.16      11.81 r
+  U1973/Y (or3a15)                         0.15      11.95 r
+  U1836/Y (or2a6)                          0.19      12.14 r
+  U3043/Y (or3a6)                          0.22      12.36 r
+  U4085/Y (or2a6)                          0.21      12.57 r
+  U1984/Y (inv1a15)                        0.09      12.66 f
+  U1826/Y (and2a6)                         0.17      12.83 f
+  U1986/Y (and2a15)                        0.17      12.99 f
+  U1975/Y (and3a15)                        0.16      13.15 f
+  U1974/Y (and2a15)                        0.13      13.28 f
+  U1833/Y (and2a6)                         0.17      13.45 f
+  U1548/Y (inv1a15)                        0.06      13.52 r
+  U3044/Y (ao1f1)                          0.36      13.87 f
+  U1844/Y (or2a3)                          0.31      14.18 f
+  U1968/Y (ao1a3)                          0.22      14.40 f
+  U2839/Y (or4a6)                          0.28      14.68 f
+  U1839/Y (or2a6)                          0.32      15.00 f
+  min_way[0] (out)                         0.00      15.00 f
+  data arrival time                                  15.00
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -15.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

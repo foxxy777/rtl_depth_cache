@@ -1,0 +1,47 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : agemtx2_find
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:19:39 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: m_1_0 (input port clocked by clk)
+  Endpoint: lru_way[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  agemtx2_find       5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  m_1_0 (in)                               0.00       5.00 f
+  U6/Y (inv1a3)                            0.11       5.11 r
+  U5/Y (and2a3)                            0.44       5.55 r
+  lru_way[0] (out)                         0.00       5.55 r
+  data arrival time                                   5.55
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -5.55
+  -----------------------------------------------------------
+  slack (MET)                                         9.45
+
+
+1

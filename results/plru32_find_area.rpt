@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : plru32_find
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:20:42 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                           36
+Number of nets:                            98
+Number of cells:                           67
+Number of combinational cells:             67
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         15
+Number of references:                       6
+
+Combinational area:               1446.620008
+Buf/Inv area:                      162.600002
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            7559.367855
+
+Total cell area:                  1446.620008
+Total area:                       9005.987864
+1

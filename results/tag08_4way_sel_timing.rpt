@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tag08_4way_sel
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:17:15 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[5] (input port clocked by clk)
+  Endpoint: selected_data[8]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tag08_4way_sel     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  req_tag[5] (in)                          0.00       5.00 f
+  U463/Y (xor2a1)                          0.57       5.57 r
+  U462/Y (or2a1)                           0.61       6.18 r
+  U456/Y (or4a3)                           0.40       6.58 r
+  U422/Y (and4a3)                          0.37       6.95 r
+  U211/Y (inv1a3)                          0.42       7.37 f
+  U415/Y (and2a3)                          0.25       7.62 f
+  U414/Y (inv1a1)                          0.96       8.58 r
+  U236/Y (buf1a3)                          0.40       8.97 r
+  U212/Y (buf1a3)                          0.32       9.30 r
+  U371/Y (and2a3)                          0.26       9.55 r
+  U369/Y (or4a3)                           0.40       9.96 r
+  selected_data[8] (out)                   0.00       9.96 r
+  data arrival time                                   9.96
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.96
+  -----------------------------------------------------------
+  slack (MET)                                         5.04
+
+
+1

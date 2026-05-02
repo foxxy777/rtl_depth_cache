@@ -1,0 +1,54 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : qread_4_oh
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:21:32 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: ptr[0] (input port clocked by clk)
+  Endpoint: data_out0[9]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qread_4_oh         5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  ptr[0] (in)                              0.00       5.00 f
+  U2252/Y (inv1a3)                         0.25       5.25 r
+  U2684/Y (and3a3)                         0.66       5.91 r
+  U1499/Y (buf1a3)                         0.33       6.24 r
+  U1398/Y (buf1a3)                         0.36       6.60 r
+  U2810/Y (and2a3)                         0.28       6.88 r
+  U2162/Y (oa1f3)                          0.15       7.03 f
+  U2161/Y (and4a3)                         0.21       7.24 f
+  U2160/Y (inv1a3)                         0.35       7.58 r
+  data_out0[9] (out)                       0.00       7.59 r
+  data arrival time                                   7.59
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -7.59
+  -----------------------------------------------------------
+  slack (MET)                                         7.41
+
+
+1

@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_E2_16w32
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:48 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[10]
+              (input port clocked by clk)
+  Endpoint: hit[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_E2_16w32       5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  req_tag[10] (in)                         0.00       5.00 f
+  U785/Y (inv1a6)                          0.80       5.80 r
+  U676/Y (xor2a6)                          0.38       6.18 r
+  U786/Y (and4a3)                          0.34       6.52 r
+  U723/Y (and4a3)                          0.35       6.87 r
+  U721/Y (and2a3)                          0.47       7.34 r
+  hit[0] (out)                             0.00       7.34 r
+  data arrival time                                   7.34
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -7.34
+  -----------------------------------------------------------
+  slack (MET)                                         7.66
+
+
+1

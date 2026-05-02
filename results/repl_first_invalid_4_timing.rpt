@@ -1,0 +1,50 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : repl_first_invalid_4
+Version: V-2023.12-SP3
+Date   : Sat May  2 13:24:03 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: valid_bits[3]
+              (input port clocked by clk)
+  Endpoint: way[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  repl_first_invalid_4
+                     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  valid_bits[3] (in)                       0.00       5.00 f
+  U13/Y (and2a3)                           0.22       5.22 f
+  U15/Y (inv1a3)                           0.15       5.37 r
+  U14/Y (and3a3)                           0.46       5.83 r
+  way[1] (out)                             0.00       5.83 r
+  data arrival time                                   5.83
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -5.83
+  -----------------------------------------------------------
+  slack (MET)                                         9.17
+
+
+1

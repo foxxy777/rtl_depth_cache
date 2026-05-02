@@ -1,0 +1,62 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hamming32_decode
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:09:24 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: code[15] (input port clocked by clk)
+  Endpoint: dout[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hamming32_decode   5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  code[15] (in)                            0.00       5.00 f
+  U146/Y (xor2a6)                          0.23       5.23 f
+  U145/Y (xor2a6)                          0.28       5.51 f
+  U144/Y (xor2a6)                          0.34       5.85 r
+  U143/Y (xor2a6)                          0.25       6.10 f
+  U142/Y (xor2a6)                          0.31       6.41 r
+  U116/Y (xor2a6)                          0.24       6.65 f
+  U115/Y (xor2a6)                          0.26       6.90 f
+  U114/Y (xor2a6)                          0.33       7.23 r
+  U188/Y (inv1a3)                          0.18       7.41 f
+  U183/Y (and2a3)                          0.36       7.77 f
+  U186/Y (inv1a3)                          0.17       7.94 r
+  U184/Y (or3a2)                           0.36       8.29 r
+  U169/Y (and2a3)                          0.62       8.92 r
+  U170/Y (and3a3)                          0.44       9.36 r
+  U171/Y (and2a3)                          0.38       9.74 r
+  U200/Y (and3a3)                          0.28      10.01 r
+  U19/Y (xor2a6)                           0.34      10.35 f
+  dout[2] (out)                            0.00      10.35 f
+  data arrival time                                  10.35
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                 -10.35
+  -----------------------------------------------------------
+  slack (MET)                                         4.65
+
+
+1

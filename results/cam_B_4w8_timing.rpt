@@ -1,0 +1,50 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_B_4w8
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:08 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: req_tag[5] (input port clocked by clk)
+  Endpoint: any_hit (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_B_4w8          5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  req_tag[5] (in)                          0.00       5.00 f
+  U55/Y (xor2a1)                           0.57       5.57 r
+  U54/Y (or2a1)                            0.61       6.18 r
+  U48/Y (or4a3)                            0.24       6.42 r
+  U12/Y (inv1a3)                           0.36       6.78 f
+  U14/Y (or4a3)                            0.53       7.31 f
+  any_hit (out)                            0.00       7.31 f
+  data arrival time                                   7.31
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -7.31
+  -----------------------------------------------------------
+  slack (MET)                                         7.69
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : cam_B_2w32
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:10:06 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                          241
+Number of nets:                           333
+Number of cells:                          109
+Number of combinational cells:            105
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         10
+Number of references:                       3
+
+Combinational area:               4057.829979
+Buf/Inv area:                      108.400002
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           13960.646221
+
+Total cell area:                  4057.829979
+Total area:                      18018.476200
+1

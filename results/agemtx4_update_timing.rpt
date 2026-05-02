@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : agemtx4_update
+Version: V-2023.12-SP3
+Date   : Thu Apr 30 09:19:58 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: access_way[0]
+              (input port clocked by clk)
+  Endpoint: new_1_0 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  agemtx4_update     5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  access_way[0] (in)                       0.00       5.00 f
+  U44/Y (inv1a3)                           0.24       5.24 r
+  U17/Y (or2a3)                            0.31       5.55 r
+  U16/Y (or2a3)                            0.26       5.81 r
+  U38/Y (inv1a3)                           0.25       6.06 f
+  U15/Y (ao1a3)                            0.38       6.44 f
+  new_1_0 (out)                            0.00       6.44 f
+  data arrival time                                   6.44
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -6.44
+  -----------------------------------------------------------
+  slack (MET)                                         8.56
+
+
+1
