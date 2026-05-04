@@ -7,65 +7,56 @@ Report : timing
         -max_paths 1
 Design : cam_C2_32w32
 Version: V-2023.12-SP3
-Date   : Sat May  2 13:23:50 2026
+Date   : Mon May  4 03:00:11 2026
 ****************************************
 
 Operating Conditions: nom_pvt   Library: ssc_core
 Wire Load Model Mode: enclosed
 
-  Startpoint: tags[160] (input port clocked by clk)
-  Endpoint: way_enc[4] (output port clocked by clk)
+  Startpoint: tags[992] (input port clocked by clk)
+  Endpoint: way_enc[0] (output port clocked by clk)
   Path Group: clk
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
   cam_C2_32w32       5KGATES               ssc_core
-  cam_C2_32w32_DW01_cmp6_26
+  cam_C2_32w32_DW01_cmp6_0
                      5KGATES               ssc_core
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  input external delay                                    5.00       5.00 r
-  tags[160] (in)                                          0.00       5.00 r
-  eq_61/B[0] (cam_C2_32w32_DW01_cmp6_26)                  0.00       5.00 r
-  eq_61/U3/Y (inv1a3)                                     0.10       5.10 f
-  eq_61/U4/Y (or2a2)                                      0.33       5.43 f
-  eq_61/U48/Y (oa1f1)                                     1.05       6.48 r
-  eq_61/U47/Y (or4a3)                                     0.33       6.81 r
-  eq_61/U26/Y (or4a3)                                     0.19       7.01 r
-  eq_61/U22/Y (inv1a3)                                    0.19       7.20 f
-  eq_61/EQ (cam_C2_32w32_DW01_cmp6_26)                    0.00       7.20 f
-  U218/Y (or2a2)                                          0.33       7.53 f
-  U217/Y (or2a3)                                          0.22       7.75 f
-  U201/Y (or2a6)                                          0.26       8.01 f
-  U212/Y (or3a6)                                          0.34       8.35 f
-  U203/Y (or2a6)                                          0.24       8.60 f
-  U179/Y (or3a6)                                          0.34       8.94 f
-  U195/Y (or2a6)                                          0.25       9.20 f
-  U172/Y (or3a2)                                          0.45       9.65 f
-  U174/Y (or3a6)                                          0.34       9.99 f
-  U175/Y (inv1a3)                                         0.22      10.22 r
-  U221/Y (and3a3)                                         0.30      10.52 r
-  U176/Y (inv1a3)                                         0.21      10.73 f
-  U186/Y (or2a6)                                          0.25      10.98 f
-  U180/Y (or2a6)                                          0.25      11.23 f
-  U194/Y (or2a6)                                          0.26      11.50 f
-  U200/Y (inv1a3)                                         0.19      11.68 r
-  U238/Y (and3a3)                                         0.29      11.97 r
-  U181/Y (and2a3)                                         0.32      12.29 r
-  U182/Y (and3a3)                                         0.30      12.60 r
-  U183/Y (inv1a3)                                         0.20      12.79 f
-  U235/Y (or3a2)                                          0.44      13.23 f
-  U202/Y (ao1f3)                                          0.16      13.40 r
-  U190/Y (or3a2)                                          0.42      13.81 r
-  U108/Y (ao1a3)                                          0.22      14.03 r
-  U237/Y (or4a3)                                          0.24      14.27 r
-  U231/Y (or3a2)                                          0.71      14.98 r
-  way_enc[4] (out)                                        0.00      14.99 r
-  data arrival time                                                 14.99
+  input external delay                                    5.00       5.00 f
+  tags[992] (in)                                          0.00       5.00 f
+  eq_129/B[0] (cam_C2_32w32_DW01_cmp6_0)                  0.00       5.00 f
+  eq_129/U3/Y (inv1a3)                                    0.14       5.14 r
+  eq_129/U47/Y (or2a1)                                    0.73       5.87 r
+  eq_129/U46/Y (and2a3)                                   0.35       6.22 r
+  eq_129/U45/Y (oa1f1)                                    0.32       6.54 f
+  eq_129/U44/Y (or4a3)                                    0.30       6.84 f
+  eq_129/U6/Y (or4a3)                                     0.27       7.11 f
+  eq_129/U1/Y (inv1a3)                                    0.20       7.31 r
+  eq_129/EQ (cam_C2_32w32_DW01_cmp6_0)                    0.00       7.31 r
+  U188/Y (inv1a3)                                         0.17       7.48 f
+  U187/Y (ao1f3)                                          0.28       7.76 r
+  U186/Y (oa1f3)                                          0.27       8.03 f
+  U185/Y (ao1f3)                                          0.29       8.32 r
+  U180/Y (oa1f3)                                          0.27       8.59 f
+  U179/Y (ao1f3)                                          0.29       8.88 r
+  U178/Y (oa1f3)                                          0.27       9.15 f
+  U177/Y (ao1f3)                                          0.29       9.44 r
+  U184/Y (oa1f3)                                          0.27       9.71 f
+  U183/Y (ao1f3)                                          0.29      10.00 r
+  U182/Y (oa1f3)                                          0.27      10.27 f
+  U181/Y (ao1f3)                                          0.29      10.56 r
+  U176/Y (oa1f3)                                          0.27      10.83 f
+  U175/Y (ao1f3)                                          0.29      11.12 r
+  U174/Y (oa1f3)                                          0.27      11.39 f
+  U173/Y (ao1f3)                                          0.70      12.09 r
+  way_enc[0] (out)                                        0.00      12.09 r
+  data arrival time                                                 12.09
 
   clock clk (rise edge)                                  20.00      20.00
   clock network delay (ideal)                             0.00      20.00
@@ -73,9 +64,9 @@ Wire Load Model Mode: enclosed
   data required time                                                15.00
   --------------------------------------------------------------------------
   data required time                                                15.00
-  data arrival time                                                -14.99
+  data arrival time                                                -12.09
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.01
+  slack (MET)                                                        2.91
 
 
 1

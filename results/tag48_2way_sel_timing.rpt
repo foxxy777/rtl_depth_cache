@@ -1,0 +1,62 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tag48_2way_sel
+Version: V-2023.12-SP3
+Date   : Mon May  4 03:00:08 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: tag0[0] (input port clocked by clk)
+  Endpoint: data_out[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tag48_2way_sel     5KGATES               ssc_core
+  tag48_2way_sel_DW01_cmp6_1
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 r
+  tag0[0] (in)                                            0.00       5.00 r
+  r56/B[0] (tag48_2way_sel_DW01_cmp6_1)                   0.00       5.00 r
+  r56/U3/Y (inv1a3)                                       0.10       5.10 f
+  r56/U73/Y (or2a1)                                       0.53       5.63 f
+  r56/U72/Y (and2a3)                                      0.24       5.86 f
+  r56/U71/Y (oa1f1)                                       0.88       6.74 r
+  r56/U65/Y (or4a3)                                       0.33       7.07 r
+  r56/U6/Y (or4a3)                                        0.19       7.26 r
+  r56/U1/Y (inv1a3)                                       0.23       7.49 f
+  r56/EQ (tag48_2way_sel_DW01_cmp6_1)                     0.00       7.49 f
+  U160/Y (inv1a3)                                         0.25       7.75 r
+  U150/Y (buf1a3)                                         0.48       8.22 r
+  U147/Y (inv1a3)                                         0.43       8.65 f
+  U181/Y (and2a3)                                         0.26       8.91 f
+  U12/Y (ao1a3)                                           0.36       9.27 f
+  data_out[6] (out)                                       0.00       9.27 f
+  data arrival time                                                  9.27
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                 -9.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.73
+
+
+1

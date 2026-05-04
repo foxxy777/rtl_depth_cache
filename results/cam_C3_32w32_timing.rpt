@@ -1,0 +1,77 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cam_C3_32w32
+Version: V-2023.12-SP3
+Date   : Mon May  4 03:00:13 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: tags[448] (input port clocked by clk)
+  Endpoint: way_enc[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cam_C3_32w32       5KGATES               ssc_core
+  cam_C3_32w32_DW01_cmp6_17
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 f
+  tags[448] (in)                                          0.00       5.00 f
+  eq_190/B[0] (cam_C3_32w32_DW01_cmp6_17)                 0.00       5.00 f
+  eq_190/U5/Y (inv1a3)                                    0.15       5.15 r
+  eq_190/U50/Y (and2a3)                                   0.25       5.40 r
+  eq_190/U7/Y (inv1a3)                                    0.18       5.58 f
+  eq_190/U49/Y (oa1f1)                                    1.04       6.63 r
+  eq_190/U46/Y (or4a3)                                    0.29       6.91 r
+  eq_190/U8/Y (or4a3)                                     0.19       7.11 r
+  eq_190/U3/Y (inv1a3)                                    0.20       7.30 f
+  eq_190/EQ (cam_C3_32w32_DW01_cmp6_17)                   0.00       7.30 f
+  U180/Y (or4a3)                                          0.27       7.57 f
+  U179/Y (or4a3)                                          0.35       7.92 f
+  U151/Y (or3a6)                                          0.36       8.27 f
+  U139/Y (inv1a3)                                         0.78       9.05 r
+  U133/Y (ao1f9)                                          0.36       9.41 f
+  U138/Y (ao1f1)                                          0.50       9.90 r
+  U134/Y (pclk1b27)                                       0.72      10.62 f
+  U142/Y (and2a15)                                        0.21      10.83 f
+  U172/Y (and2a3)                                         0.21      11.04 f
+  U145/Y (or3a6)                                          0.36      11.40 f
+  U161/Y (or4a3)                                          0.26      11.66 f
+  U160/Y (inv1a3)                                         0.15      11.81 r
+  U136/Y (or3a2)                                          0.27      12.08 r
+  U135/Y (or3a2)                                          0.41      12.49 r
+  U137/Y (inv1a3)                                         0.53      13.02 f
+  U162/Y (or3a2)                                          0.44      13.46 f
+  U159/Y (ao1f3)                                          0.16      13.62 r
+  U158/Y (ao1f3)                                          0.25      13.87 f
+  U150/Y (inv1a3)                                         0.44      14.32 r
+  U157/Y (oa1f3)                                          0.31      14.63 f
+  U156/Y (and3a3)                                         0.37      14.99 f
+  way_enc[0] (out)                                        0.00      14.99 f
+  data arrival time                                                 14.99
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -5.00      15.00
+  data required time                                                15.00
+  --------------------------------------------------------------------------
+  data required time                                                15.00
+  data arrival time                                                -14.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

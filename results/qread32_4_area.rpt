@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : qread32_4
+Version: V-2023.12-SP3
+Date   : Mon May  4 03:00:22 2026
+****************************************
+
+Library(s) Used:
+
+    ssc_core (File: /home/foxxy/synopsys/syn/V-2023.12-SP3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Number of ports:                         1157
+Number of nets:                          6756
+Number of cells:                         5724
+Number of combinational cells:           5724
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        784
+Number of references:                      10
+
+Combinational area:             148127.189442
+Buf/Inv area:                    11268.480042
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:          617526.780323
+
+Total cell area:                148127.189442
+Total area:                     765653.969765
+1

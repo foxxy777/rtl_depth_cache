@@ -1,0 +1,55 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : qread32_1
+Version: V-2023.12-SP3
+Date   : Mon May  4 03:00:18 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: ptr[3] (input port clocked by clk)
+  Endpoint: data_out[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qread32_1          5KGATES               ssc_core
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 r
+  ptr[3] (in)                              0.00       5.00 r
+  U2068/Y (inv1a3)                         0.14       5.14 f
+  U1589/Y (or3a2)                          0.57       5.71 f
+  U1189/Y (or2a3)                          0.26       5.97 f
+  U1588/Y (inv1a3)                         0.92       6.88 r
+  U1432/Y (buf1a3)                         0.94       7.83 r
+  U2675/Y (oa1f3)                          0.38       8.20 f
+  U1556/Y (and4a3)                         0.21       8.42 f
+  U1555/Y (and4a3)                         0.19       8.60 f
+  U1554/Y (inv1a3)                         0.35       8.95 r
+  data_out[0] (out)                        0.00       8.95 r
+  data arrival time                                   8.95
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -5.00      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -8.95
+  -----------------------------------------------------------
+  slack (MET)                                         6.05
+
+
+1
