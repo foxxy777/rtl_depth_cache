@@ -1,23 +1,22 @@
-# run_misc.tcl
-# Usage: dc_shell -f tcl/run_misc.tcl
+# run_xor_eq.tcl
+# Usage: dc_shell -f tcl/run_xor_eq.tcl
 
 source [file dirname [file normalize [info script]]]/config.tcl
 set OUT $BASE_DIR/results
 file mkdir $OUT
 
 set RTL_FILES [list \
-    $BASE_DIR/rtl/misc/addr_decode.v \
-    $BASE_DIR/rtl/misc/bytesel.v
+    $BASE_DIR/rtl/tag/tag.v \
+    $BASE_DIR/rtl/tag/tag_xor_eq.v
 ]
 
 set DESIGNS [list \
-    addr_set04 \
-    addr_set06 \
-    addr_set08 \
-    addr_set10 \
-    line032_bytesel \
-    line064_bytesel \
-    line128_bytesel
+    eq_xor_8 \
+    eq_xor_16 \
+    eq_xor_20 \
+    eq_xor_24 \
+    eq_xor_32 \
+    eq_xor_48
 ]
 
 foreach DESIGN $DESIGNS {
@@ -37,4 +36,4 @@ foreach DESIGN $DESIGNS {
     echo "$DESIGN done."
 }
 
-echo "=== misc synthesis complete ==="
+echo "=== xor_eq synthesis complete ==="
